@@ -7,10 +7,13 @@ from pathlib import Path
 current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
 css_file = current_dir / "styles" / "main.css"
 resume_file = current_dir / "cv" / "CVLUIDJYMONGORINSEMEDOBRITO.pdf"
+css_file = current_dir / "styles" / "main.css"
 
-with open(resume_file, "rb") as pdf_file:
-    PDFbyte = pdf_file.read()
-image = Image.open('profile_pic.jpg')
+
+with open(css_file) as f:
+    css = f.read()
+
+image = Image.open('photo.jpg')
 st.set_page_config(page_title="CV de Luidjy MONGORIN SEMEDO BRITO")
 data = {
     "Langues" : ["French","English"],
@@ -42,7 +45,7 @@ with col2:
         label="telecharge",
         data=PDFbyte,
         key="pdf_download",
-        file_name="cv_luidjy_mongorin",
+        file_name=resume_file.name,
         mime="application\pdf")   
 
 
