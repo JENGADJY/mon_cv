@@ -10,8 +10,7 @@ resume_file = current_dir / "cv" / "CVLUIDJYMONGORINSEMEDOBRITO.pdf"
 css_file = current_dir / "styles" / "main.css"
 
 
-with open(css_file) as f:
-    css = f.read()
+
 
 image = Image.open('photo.jpg')
 st.set_page_config(page_title="CV de Luidjy MONGORIN SEMEDO BRITO")
@@ -56,7 +55,7 @@ st.write("I hope become a data analyst later.")
 st.write("-------------------------")
 st.subheader("🎓FORMATION:")
 
-st.markdown("• Septembre 2023 - Maintenant : Paris Ynov Campus")
+st.markdown("• September 2023 - Now : Paris Ynov Campus")
 st.write("B1 Informatique")
 
 st.markdown("• 2021-2023 : Baccalauréat Générale ")
@@ -94,7 +93,7 @@ st.subheader("🗣️LANGUES:")
 st.dataframe(df)
 
 st.subheader("COMPÉTENCES:")
-
+st.title("bonjour ")
 st.write("Montage pc complet ")
 st.write("Installation système d’exploitation")
 st.write("Installation Logiciels")
