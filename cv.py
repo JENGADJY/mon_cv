@@ -11,7 +11,6 @@ css_file = current_dir / "styles" / "main.css"
 
 
 
-
 image = Image.open("C:/Users/JENGO/B2_projet/cv_streamlit/mon_cv/photo.jpg")
 st.set_page_config(page_title="CV de Luidjy MONGORIN SEMEDO BRITO")
 data = {
@@ -71,10 +70,28 @@ with col3:
 
 
 with col4:
-    st.subheader("Framework & Outils:")
+    st.subheader("🛠️ FRAMEWORK & OUTILS")
     st.write("Scrapping(BeautifulSoup,Selenium)")
     st.write("Visualisation(Pandas,Matplotlib,Streamlit)")
     st.write("Scrapping(BeautifulSoup,Selenium)")
+
+
+st.subheader("🛠️ Projet")
+
+projects = [
+    ("CV Streamlit", "Premier projet consistant à créer un CV avec le framework Streamlit en Python."),
+    ("FastAPI-MongoDB", "Projet permettant de gérer les données d'un script scrappé avec BeautifulSoup et stockées dans MongoDB."),
+    ("Forum", "Création d'un forum fonctionnant en local et utilisant PhpMyAdmin."),
+    ("RPG", "Jeu de rôle en Python."),
+    ("Boutique e-Commerce", "Création d'une boutique e-Commerce en PHP et HTML avec du scrapping via Gout et Symfony."),
+    ("Projet 48h : Analyse des Tweets Engie avec Streamlit", 
+     "Analyse des tweets Engie en utilisant Mistral IA pour déterminer un pourcentage de ressenti et générer un compte rendu."),
+]
+
+for title, description in projects:
+    st.markdown(f"**🔹 {title}**")
+    st.write(description)
+    st.write("---")
 
 
 st.subheader("🎓FORMATION:")
