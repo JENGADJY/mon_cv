@@ -41,11 +41,12 @@ with col2:
     st.write("living at La Garenne-Colombes")
     st.write("got my driver's license")
     st.download_button(
-        label="telecharge",
+        label="Mon CV",
         data=PDFbyte,
         key="pdf_download",
         file_name=resume_file.name,
-        mime="application\pdf")   
+        mime="application\pdf")
+    st.markdown('<a href="https://github.com/JENGADJY" target="_self">Mon Github</a>', unsafe_allow_html=True)   
 
 
 
@@ -115,11 +116,6 @@ st.write("Découverte du réseau")
 st.write("support informatique")
 st.write("découverte des différents autres métiers chez Viapost")
 st.write("-------------------------")
-
-
-
-
-
 
 st.subheader("🗣️LANGUES:")
 
