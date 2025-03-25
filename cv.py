@@ -6,13 +6,13 @@ from pathlib import Path
 
 current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
 css_file = current_dir / "styles" / "main.css"
-resume_file = current_dir / "cv" / "CVLUIDJYMONGORINSEMEDOBRITO.pdf"
+resume_file = current_dir / "cv" / "cv_alternance_data.pdf"
 css_file = current_dir / "styles" / "main.css"
 
 
 
 
-image = Image.open('photo.jpg')
+image = Image.open("C:/Users/JENGO/B2_projet/cv_streamlit/mon_cv/photo.jpg")
 st.set_page_config(page_title="CV de Luidjy MONGORIN SEMEDO BRITO")
 data = {
     "Langues" : ["French","English"],
@@ -37,8 +37,8 @@ with col1:
 
 with col2:
     st.title("MONGORIN SEMEDO BRITO Luidjy")
-    st.write("📧Main mail : LUIDJYMSB2301@gmail.com")
-    st.write("living at Saint Michel sur Orge ")
+    st.write("📧Main mail : luidjy.msb@gmail.com")
+    st.write("living at La Garenne-Colombes")
     st.write("got my driver's license")
     st.download_button(
         label="telecharge",
@@ -50,13 +50,36 @@ with col2:
 
 
 st.write("-------------------------")
-st.write("My name is Luidjy et I'm a student at Ynov campus Paris,currently in B1 IT.")
+st.write("My name is Luidjy et I'm a student at Ynov campus Paris,currently in B2 IT.")
 st.write("I hope become a data analyst later.")
 st.write("-------------------------")
+
+
+
+
+col3,col4= st.columns(2, gap="small")
+
+
+
+with col3:
+    st.subheader("Langages:")
+
+    st.write("Python,Golang,PHP,C#,SQL")
+    st.subheader("Bases de Données:")
+    st.write("PhpMyAdmin,MongoDB,MySQL")
+
+
+with col4:
+    st.subheader("Framework & Outils:")
+    st.write("Scrapping(BeautifulSoup,Selenium)")
+    st.write("Visualisation(Pandas,Matplotlib,Streamlit)")
+    st.write("Scrapping(BeautifulSoup,Selenium)")
+
+
 st.subheader("🎓FORMATION:")
 
 st.markdown("• September 2023 - Now : Paris Ynov Campus")
-st.write("B1 Informatique")
+st.write("B2 Informatique")
 
 st.markdown("• 2021-2023 : Baccalauréat Générale ")
 st.write("Lycée Albert Einstein , Saint-Geneviève-des-Bois")
@@ -71,7 +94,12 @@ st.write("-------------------------")
 
 st.subheader("💼PARCOURS PROFESSIONNEL:")
 
-st.markdown("• Septembre 2023 - Maintenant : AMAZON")
+st.markdown("• April 2024 - August 2024 : Viaposte(Crit)")
+st.write("91380 Chilly-Mazarin")
+st.markdown("Injecteur de colis  , Gestion de zone ")
+
+st.markdown("• Septembre 2023 - January 2024 : AMAZON")
+st.write("91220 Brétigny-sur-Orge")
 st.markdown("Préparateur de commande , placement des produits ")
 
 st.markdown("• Juin 2022 à Juillet 2023 technicien de maintenance Laverie 3000")
@@ -88,26 +116,16 @@ st.write("support informatique")
 st.write("découverte des différents autres métiers chez Viapost")
 st.write("-------------------------")
 
+
+
+
+
+
 st.subheader("🗣️LANGUES:")
 
 st.dataframe(df)
 
-st.subheader("COMPÉTENCES:")
-st.title("bonjour ")
-st.write("Montage pc complet ")
-st.write("Installation système d’exploitation")
-st.write("Installation Logiciels")
-st.write("Apprentissage des languages (python, HTML, GO)")
-
 st.subheader("CENTRES D’INTERET:")
 
 st.write("Musique")
-st.write("Jeux vidéo")
-
-
-
-
-
-    
-    
 
